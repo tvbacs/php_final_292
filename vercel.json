@@ -1,29 +1,13 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "index.php",
-      "use": "vercel-php",
-      "config": {
-        "php": {
-          "server": {
-            "port": 8000,
-            "host": "127.0.0.1"
-          }
-        }
-      }
+  "functions": {
+    "index.php": {
+      "runtime": "vercel-php@0.7.1"
     }
-  ],
+  },
   "routes": [
     {
-      "src": "/",
+      "src": "/(.*)",
       "dest": "index.php"
-    }
-  ],
-  "links": [
-    {
-      "url": "https://php-final-292-pu9m.vercel.app/",
-      "category": "documentation"
     }
   ]
 }
