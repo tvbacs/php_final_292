@@ -7,11 +7,23 @@
       "config": {
         "php": {
           "server": {
-            "port": 3000,
+            "port": 8000,
             "host": "127.0.0.1"
           }
         }
       }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "index.php"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://php-final-292-pu9m.vercel.app/",
+      "category": "documentation"
     }
   ]
 }
