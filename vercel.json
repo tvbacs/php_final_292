@@ -1,6 +1,8 @@
 {
-    "devDependencies": {
-      "vercel-php": "^0.3.6"
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.php"
     }
-  }
-  
+  ]
+}
