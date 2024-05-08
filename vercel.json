@@ -3,7 +3,15 @@
   "builds": [
     {
       "src": "index.php",
-      "use": "vercel-php"
+      "use": "vercel-php",
+      "config": {
+        "php": {
+          "server": {
+            "port": 8000,
+            "host": "127.0.0.1"
+          }
+        }
+      }
     }
   ]
 }
